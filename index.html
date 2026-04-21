@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Benedict Bett — Data Scientist specializing in machine learning, predictive modeling, and data-driven solutions.">
+  <title>Benedict Bett — Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background atmosphere -->
+  <div class="bg-blob"></div>
+  <div class="bg-blob2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">bb<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-label reveal">Hi, my name is</p>
+      <h1 class="hero-name reveal">
+        Benedict Bett<span class="accent">.</span>
+      </h1>
+      <h2 class="hero-sub reveal">I turn data into <em>decisions</em>.</h2>
+      <p class="hero-tagline reveal">
+        Data scientist focused on machine learning, predictive modeling, and real-world AI solutions. Currently building intelligent systems that solve meaningful problems across finance, telecoms, and beyond.
+      </p>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-value">84.2<span class="stat-unit">%</span></span>
+          <span class="stat-label">ROC-AUC · Churn Model</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">307K<span class="stat-unit">+</span></span>
+          <span class="stat-label">Samples · Credit Model</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">3<span class="stat-unit">+</span></span>
+          <span class="stat-label">ML Projects Shipped</span>
+        </div>
+      </div>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="mailto:benedictbett08@gmail.com" class="btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-scroll reveal">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About me</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an aspiring Data Scientist with a strong passion for extracting meaningful insights from data and building intelligent systems. My interests span across <strong>Data Science, Data Analysis, and Machine Learning</strong> — where I focus on understanding patterns, solving complex problems, and creating data-driven solutions.
+          </p>
+          <p>
+            My journey into data began with a fascination for how data shapes decision-making. I'm committed to continuously expanding my skills in statistical analysis, predictive modeling, and emerging technologies in the AI and ML landscape.
+          </p>
+          <p>
+            I'm actively seeking internship opportunities to apply my knowledge in real-world scenarios and contribute to impactful projects. I believe in the power of data to drive innovation — and I approach every problem with curiosity and dedication.
+          </p>
+
+          <div class="about-tech">
+            <p class="tech-label">Technologies I work with:</p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>scikit-learn</li>
+              <li>TensorFlow</li>
+              <li>Pandas</li>
+              <li>SQL</li>
+              <li>LightGBM</li>
+              <li>SHAP</li>
+              <li>Streamlit</li>
+              <li>Matplotlib / Seaborn</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <img src="images/profile.jpg" alt="Benedict Bett" class="about-image" onerror="this.parentElement.classList.add('no-image')">
+            <div class="image-placeholder">BB</div>
+            <div class="image-border"></div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-dot"></span>
+            Open to opportunities
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <!-- Featured Project 1 -->
+      <div class="project-featured reveal">
+        <div class="project-featured-meta">
+          <span class="project-tag">Featured Project</span>
+          <h3 class="project-featured-title">Safaricom Churn Intelligence</h3>
+          <p class="project-featured-desc">
+            ML-powered customer churn prediction built for Kenya's telco market. Engineered Kenya-specific features including M-Pesa usage patterns, Bonga loyalty points, and county-level demographics to identify at-risk customers before they churn.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">84.2%</span>
+              <span class="metric-label">ROC-AUC</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">RF</span>
+              <span class="metric-label">Random Forest</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Kenya</span>
+              <span class="metric-label">Market</span>
+            </div>
+          </div>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>Pandas</li>
+            <li>Random Forest</li>
+            <li>Feature Engineering</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bennedictbett/Safaricom-churn-intelligence#readme" class="project-link" target="_blank">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+              Blog Post
+            </a>
+            <a href="https://github.com/bennedictbett/Safaricom-churn-intelligence" class="project-link" target="_blank">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+        <div class="project-featured-image">
+          <div class="project-chart-mock">
+            <div class="chart-label">ROC Curve</div>
+            <svg class="roc-chart" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="140" x2="180" y2="140" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="20" y1="140" x2="20" y2="10" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="20" y1="140" x2="180" y2="10" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4"/>
+              <path d="M20,140 C40,120 60,60 90,30 C110,15 140,12 180,10" fill="none" stroke="#00d4a0" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M20,140 C40,120 60,60 90,30 C110,15 140,12 180,10 L180,140 Z" fill="url(#rocGrad)" opacity="0.3"/>
+              <defs>
+                <linearGradient id="rocGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#00d4a0" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#00d4a0" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <text x="100" y="80" fill="#00d4a0" font-size="10" font-family="DM Mono" text-anchor="middle">AUC = 0.842</text>
+              <text x="20" y="155" fill="rgba(255,255,255,0.3)" font-size="7" font-family="DM Mono">0.0</text>
+              <text x="175" y="155" fill="rgba(255,255,255,0.3)" font-size="7" font-family="DM Mono">1.0</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Project 2 -->
+      <div class="project-featured reverse reveal">
+        <div class="project-featured-meta">
+          <span class="project-tag">Featured Project</span>
+          <h3 class="project-featured-title">Credit Intelligence</h3>
+          <p class="project-featured-desc">
+            End-to-end credit risk scoring system using LightGBM to predict loan default probability. Features a live Streamlit app with SHAP explainability, risk band classification, and loan recommendations — trained on 307,511 samples.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">0.75</span>
+              <span class="metric-label">ROC-AUC</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">307K</span>
+              <span class="metric-label">Samples</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Live</span>
+              <span class="metric-label">Streamlit App</span>
+            </div>
+          </div>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>LightGBM</li>
+            <li>SHAP</li>
+            <li>Streamlit</li>
+            <li>scikit-learn</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/bennedictbett/credit-intelligence#readme" class="project-link" target="_blank">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+              Blog Post
+            </a>
+            <a href="https://credit-intelligence-53xbnpkgxumwu3w7jycx85.streamlit.app/" class="project-link accent" target="_blank">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,8 12,12 14,14"/></svg>
+              Live App
+            </a>
+          </div>
+        </div>
+        <div class="project-featured-image">
+          <div class="project-chart-mock">
+            <div class="chart-label">Risk Distribution</div>
+            <svg class="bar-chart" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="140" x2="180" y2="140" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <rect x="30" y="90" width="28" height="50" fill="#00d4a0" opacity="0.8" rx="3"/>
+              <rect x="70" y="60" width="28" height="80" fill="#00d4a0" opacity="0.6" rx="3"/>
+              <rect x="110" y="40" width="28" height="100" fill="#0099ff" opacity="0.5" rx="3"/>
+              <rect x="150" y="100" width="28" height="40" fill="#ff6b6b" opacity="0.6" rx="3"/>
+              <text x="44" y="155" fill="rgba(255,255,255,0.4)" font-size="7" font-family="DM Mono" text-anchor="middle">Low</text>
+              <text x="84" y="155" fill="rgba(255,255,255,0.4)" font-size="7" font-family="DM Mono" text-anchor="middle">Med</text>
+              <text x="124" y="155" fill="rgba(255,255,255,0.4)" font-size="7" font-family="DM Mono" text-anchor="middle">High</text>
+              <text x="164" y="155" fill="rgba(255,255,255,0.4)" font-size="7" font-family="DM Mono" text-anchor="middle">Very</text>
+              <text x="100" y="25" fill="rgba(255,255,255,0.4)" font-size="8" font-family="DM Mono" text-anchor="middle">Risk Band Classification</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Small project card -->
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="card-top">
+            <svg class="card-folder" width="36" height="36" fill="none" stroke="#00d4a0" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card-links">
+              <a href="#" title="GitHub" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Funnel & Customer Segmentation</h3>
+          <p class="card-desc">Applied clustering algorithms to segment customers based on purchasing behavior using K-means and hierarchical clustering to identify distinct customer groups and enable targeted strategies.</p>
+          <ul class="card-tech">
+            <li>Python</li>
+            <li>K-means</li>
+            <li>Scikit-learn</li>
+            <li>Seaborn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills & Certifications</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🐍</div>
+          <h3 class="skill-name">Python & Machine Learning</h3>
+          <p class="skill-desc">Proficient in Python with hands-on experience in ML algorithms, model building, and data manipulation using scikit-learn, TensorFlow, and Pandas.</p>
+          <a href="https://coursera.org/share/153a92ebdc9844e08f1394fa17f649de" class="skill-cert" target="_blank">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certification
+          </a>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📊</div>
+          <h3 class="skill-name">Data Visualization</h3>
+          <p class="skill-desc">Skilled in creating impactful visual representations using Matplotlib, Seaborn, Plotly, and Tableau to communicate insights and support data-driven decisions.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3 class="skill-name">SQL & Databases</h3>
+          <p class="skill-desc">Experienced in writing complex SQL queries, database design, and data extraction from relational databases with practical experience in data manipulation and analysis.</p>
+          <a href="https://www.datacamp.com/statement-of-accomplishment/course/072a772d4e661702aed095ad8c1c82c78bc27667?raw=1" class="skill-cert" target="_blank">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certification
+          </a>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎙️</div>
+          <h3 class="skill-name">Data Storytelling</h3>
+          <p class="skill-desc">Ability to translate complex data insights into compelling narratives. Experienced in presenting findings through clear visualizations and actionable recommendations for stakeholders.</p>
+        </div>
+      </div>
+
+      <div class="tools-section reveal">
+        <h3 class="tools-title">Tools & Technologies</h3>
+        <div class="tools-list">
+          <span class="tool">Python</span>
+          <span class="tool">scikit-learn</span>
+          <span class="tool">TensorFlow</span>
+          <span class="tool">LightGBM</span>
+          <span class="tool">SHAP</span>
+          <span class="tool">Pandas</span>
+          <span class="tool">NumPy</span>
+          <span class="tool">Matplotlib</span>
+          <span class="tool">Seaborn</span>
+          <span class="tool">Plotly</span>
+          <span class="tool">Tableau</span>
+          <span class="tool">SQL</span>
+          <span class="tool">Streamlit</span>
+          <span class="tool">Jupyter</span>
+          <span class="tool">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Get in touch</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="contact-block reveal">
+        <p class="contact-sub">What's next?</p>
+        <h2 class="contact-heading">Let's build something together.</h2>
+        <p class="contact-text">
+          I'm actively seeking internship opportunities in data science and machine learning. Whether you have a role, a project idea, or just want to connect — my inbox is always open.
+        </p>
+        <a href="mailto:benedictbett08@gmail.com" class="btn-primary large">Say Hello</a>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/benedict-bett-a9899038a/" class="contact-social" target="_blank">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/bennedictbett" class="contact-social" target="_blank">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="tel:+254718647283" class="contact-social">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.98-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +254 718 647 283
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Designed & Built by <span class="accent">Benedict Bett</span></p>
+    <p class="footer-sub">benedictbett08@gmail.com</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
