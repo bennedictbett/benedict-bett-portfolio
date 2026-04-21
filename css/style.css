@@ -114,15 +114,19 @@ nav.scrolled {
   counter-increment: nav-count;
 }
 .nav-links a:hover { color: var(--text); }
-.nav-cta {
-  color: var(--accent) !important;
-  border: 1px solid rgba(0,212,160,0.3);
-  padding: 0.45rem 1.2rem;
-  border-radius: 3px;
-  font-family: 'DM Mono', monospace;
-  transition: background 0.2s !important;
+.nav-resume {
+    border: 1px solid #00d4a0;
+    color: #00d4a0 !important;
+    border-radius: 4px;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
 }
-.nav-cta:hover { background: var(--accent-dim); }
+
+.nav-resume:hover {
+    background-color: rgba(0, 212, 160, 0.1);
+}
 
 .hamburger {
   display: none;
